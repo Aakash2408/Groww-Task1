@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
+</head>
+<body>
+   
+        
+
+<form name="Form" onsubmit="return validateForm()" id="employee-form" >
+    <h2>Employee Form</h2>
+
+    <div class="field-container">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="name" autofocus>
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="field-container">
+        <label>Email Address</label>
+        <input type="text" name="email" id="email" >
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="field-container">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10" id="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="field-container">
+        <label>Pan Card</label>
+        <input type="text" name="txtPANCard" maxlength="10" id="txtPANCard" >
+        <div class="error" id="pancardErr"></div>
+    </div>
+    <div class="field-container">
+        <label>Aadhar Card</label>
+        <input type="text" name="txtAadharCard"  id="txtAadharCard" >
+        <div class="error" id="aadharErr"></div>
+    </div>
+    <div class="field-container">
+        <label>State</label>
+        <select name="state" id="state">
+            <option>Select</option>
+            <option>Haryana</option>
+            <option>UP</option>
+            <option>Delhi</option>
+        </select> 
+        <div class="error" id="stateErr"></div>
+    </div>
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+    
+          
+    <div class="field-container">
+        <input type="submit" class="submit-button" value="Submit">
+    </div>
+</form>
+
+</body>
+</html>
